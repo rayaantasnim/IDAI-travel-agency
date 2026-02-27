@@ -28,6 +28,12 @@ nav a:hover {
   width: 100%;
   z-index: 1000;
   margin: 0 !important;
+
+  /* One-line fix */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .navbar-brand {
@@ -35,6 +41,13 @@ nav a:hover {
   color: #222 !important;
   font-size: 18px;
   margin-left: 20px !important;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 .nav-link {
@@ -141,7 +154,7 @@ nav a {
 
 /* Main content */
 #main-content {
-  margin-left: 0;   /* এখানে 220px বাদ দিয়ে 0 করা হলো */
+  margin-left: 0;
   margin-top: 0;
   padding: 20px;
 }
@@ -241,18 +254,17 @@ body {
 /* Main content full width */
 #main-content {
   margin: 0 !important;
-  padding: 20px;   /* শুধু ভেতরের padding রাখো */
+  padding: 20px;
   width: 100%;
 }
 
-
 body {
   margin: 0;
-  margin-top:50px !important;
+  margin-top: 50px !important;
   margin-left: 0 !important;
 }
 
-#special-image{
+#special-image {
   width: 10%;
 }
 
@@ -268,8 +280,8 @@ body {
     display: inline-block;
   }
 
-  #special-image{
-    width:25%;
+  #special-image {
+    width: 25%;
     display: inline-block;
   }
 }
