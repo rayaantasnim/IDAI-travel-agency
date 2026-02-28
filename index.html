@@ -71,12 +71,24 @@
             background: #e0a800;
             transform: translateY(-2px);
         }
+
+        #special-image{
+            width:25%;
+            background:lightyellow; 
+            padding:10px;
+        }
+
+        @media (max-width: 1100px){
+            #special-image{
+                width:60%;
+            }
+        }  
     </style>
 </head>
 <body>
 
     <center><br>
-        <img src="Logo f.png" width="25%" style="background:lightyellow; padding:10px;">
+        <img src="Logo f.png" id="special-image">
             <u>
                 <i><h1 style="font-size:25px;">To enter into our agency,<br>
                     You have to sign in at first.
