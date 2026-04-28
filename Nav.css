@@ -431,3 +431,25 @@ footer{
     margin-top: 0;
   }
 }
+
+
+@media (max-width: 1100px){
+  nav{
+    height: auto;
+    max-height:20px;
+
+    a{
+      margin-bottom:5px;
+      padding:5px !important;
+    }
+
+    img{
+      width: auto;
+      margin-top:auto;
+    }
+
+    button{
+      font-size: auto;
+    }
+  }
+}
